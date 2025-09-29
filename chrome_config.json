@@ -13,104 +13,116 @@
           "variant": "armcombo"
         }
       },
-        {
-          "id": "os_version_range_1",
-          "conditions": {
-            "os_version": {
-              "gte": 5,
-              "lt": 6
-            }
-          },
-          "action": {
-            "version": "95.0.4638.74",
-            "variant": "463807410_arm-v7a_nodpi_5plus"
+      {
+        "id": "os_version_range_1",
+        "conditions": {
+          "os_version": {
+            "gte": 5,
+            "lt": 6
           }
         },
-        {
-          "id": "os_version_range_2",
-          "conditions": {
-            "os_version": {
-              "gte": 6,
-              "lt": 7
-            }
-          },
-          "action": {
-            "version": "100.0.4896.127",
-            "variant": "489612710_arm-v7a_nodpi_6plus"
+        "action": {
+          "version": "95.0.4638.74",
+          "variant": "463807410_arm-v7a_nodpi_5plus"
+        }
+      },
+      {
+        "id": "os_version_range_2",
+        "conditions": {
+          "os_version": {
+            "gte": 6,
+            "lt": 7
           }
         },
-        {
-          "id": "os_version_range_3",
-          "conditions": {
-            "os_version": {
-              "gte": 7,
-              "lt": 8
-            }
-          },
-          "action": {
-            "version": "117.0.5938.61",
-            "variant": "593806121_arm64-v8a_armeabi-v7a_nodpi_7plus"
+        "action": {
+          "version": "100.0.4896.127",
+          "variant": "489612710_arm-v7a_nodpi_6plus"
+        }
+      },
+      {
+        "id": "os_version_range_3",
+        "conditions": {
+          "os_version": {
+            "gte": 7,
+            "lt": 8
           }
         },
-        {
-          "id": "os_version_range_4",
-          "conditions": {
-            "os_version": {
-              "gte": 8,
-              "lte": 10
-            }
-          },
-          "action": {
-            "version": "135.0.7049.113",
-            "variant": "704911321"
+        "action": {
+          "version": "117.0.5938.61",
+          "variant": "593806121_arm64-v8a_armeabi-v7a_nodpi_7plus"
+        }
+      },
+      {
+        "id": "os_version_range_4",
+        "conditions": {
+          "os_version": {
+            "gte": 8,
+            "lte": 10
           }
         },
-        {
-          "id": "specific_device_model_SM_A115M",
-          "conditions": {
-            "device_model": {
-              "in": ["SM-A115M"]
-            },
-            "os_version": {
-              "eq": 10
-            }
-          },
-          "action": {
-            "version": "108.0.5359.128",
-            "variant": "535912833_arm64-v8a_armeabi-v7a_nodpi_10plus"
+        "action": {
+          "version": "135.0.7049.113",
+          "variant": "704911321"
+        }
+      },
+      {
+        "id": "os_version_gt_10",
+        "conditions": {
+          "os_version": {
+            "gt": 10
           }
         },
-        {
-          "id": "specific_device_model_SM_A105M",
-          "conditions": {
-            "device_model": {
-              "in": ["SM-A105M"]
-            },
-            "os_version": {
-              "eq": 11
-            }
+        "action": {
+          "version": "141.0",
+          "variant": "abcd"
+        }
+      },
+      {
+        "id": "specific_device_model_SM_A115M",
+        "conditions": {
+          "device_model": {
+            "in": ["SM-A115M"]
           },
-          "action": {
-            "version": "127.0.6533.64",
-            "variant": "653306430_armeabi-v7a_nodpi_10plus"
+          "os_version": {
+            "eq": 10
           }
         },
-        {
-          "id": "chrome_specific_device_model_S22",
-          "conditions": {
-            "device_model": {
-              "in": ["SM-S901B", "SM-S901E"]
-            },
-            "os_version": {
-              "eq": 14
-            }
+        "action": {
+          "version": "108.0.5359.128",
+          "variant": "535912833_arm64-v8a_armeabi-v7a_nodpi_10plus"
+        }
+      },
+      {
+        "id": "specific_device_model_SM_A105M",
+        "conditions": {
+          "device_model": {
+            "in": ["SM-A105M"]
           },
-          "action": {
-            "version": "135.0.7049.113",
-            "variant": "704911333"
+          "os_version": {
+            "eq": 11
           }
         },
-        {
+        "action": {
+          "version": "127.0.6533.64",
+          "variant": "653306430_armeabi-v7a_nodpi_10plus"
+        }
+      },
+      {
+        "id": "chrome_specific_device_model_S22",
+        "conditions": {
+          "device_model": {
+            "in": ["SM-S901B", "SM-S901E"]
+          },
+          "os_version": {
+            "eq": 14
+          }
+        },
+        "action": {
+          "version": "135.0.7049.113",
+          "variant": "704911333"
+        }
+      },
+      {
         "id": "chrome_specific_device_model_S21",
         "conditions": {
           "device_model": {
@@ -124,499 +136,27 @@
           "version": "135.0.7049.113",
           "variant": "704911333"
         }
-        },
-        {
-          "id": "custom_chrome_v114_rule",
-          "conditions": {
-            "custom_function": "uses_chrome_v114"
-          },
-          "action": {
-            "version": "114.0.5735.130",
-            "variant": "573513033_arm64-v8a_armeabi-v7a_nodpi_10plus"
-          }
-        },
-        {
-          "id": "default_rule",
-          "conditions": {
-            "default": true
-          },
-          "action": {
-            "version": "137.0.7151.115",
-            "variant": "715111533"
-          }
-        }
-      ]
-    },
-  "webview": {
-      "rules": [
-        {
-          "id": "webview_lt_6",
-          "conditions": {
-            "os_version": {
-              "lt": 6
-            }
-          },
-          "action": {
-            "version": "95.0.4638.74",
-            "variant": "463807403_arm64-v8a_arm-v7a_nodpi_5plus"
-          }
-        },
-        {
-          "id": "webview_lt_7",
-          "conditions": {
-            "os_version": {
-              "gte": 6,
-              "lt": 7
-            }
-          },
-          "action": {
-            "version": "105.0.5195.136",
-            "variant": "519513603_arm64-v8a_arm-v7a_nodpi_6plus"
-          }
-        },
-        {
-          "id": "webview_model_SM_A115M_os_10",
-          "conditions": {
-            "device_model": {
-              "in": ["SM-A115M"]
-            },
-            "os_version": {
-              "eq": 10
-            }
-          },
-          "action": {
-            "version": "108.0.5359.128",
-            "variant": "535912833_arm64-v8a_armeabi-v7a_nodpi_10plus"
-          }
-        },
-        {
-          "id": "webview_model_SM_A105M_os_11",
-          "conditions": {
-            "device_model": {
-              "in": ["SM-A105M"]
-            },
-            "os_version": {
-              "eq": 11
-            }
-          },
-          "action": {
-            "version": "127.0.6533.64",
-            "variant": "653306430_armeabi-v7a_nodpi_10plus"
-          }
-        },
-        {
-          "id": "webview_lt_8",
-          "conditions": {
-            "os_version": {
-              "gte": 7,
-              "lt": 8
-            }
-          },
-          "action": {
-            "version": "117.0.5938.61",
-            "variant": "593806101_arm64-v8a_armeabi-v7a_nodpi_7plus"
-          }
-        },
-        {
-          "id": "webview_lte_10",
-          "conditions": {
-            "os_version": {
-              "gte": 8,
-              "lte": 10
-            }
-          },
-          "action": {
-            "version": "135.0.7049.113",
-            "variant": "704911301"
-          }
-        },
-        {
-          "id": "webview_specific_device_model_S21",
-          "conditions": {
-            "device_model": {
-              "in": ["SM-G991B"]
-            },
-            "os_version": {
-              "eq": 15
-            }
-          },
-          "action": {
-            "version": "135.0.7049.113",
-            "variant": "704911333"
-          }
-        },
-       {
-          "id": "webview_specific_device_model_S22",
-          "conditions": {
-            "device_model": {
-              "in": ["SM-S901B", "SM-S901E"]
-            },
-            "os_version": {
-              "eq": 14
-            }
-          },
-          "action": {
-            "version": "135.0.7049.113",
-            "variant": "704911333"
-          }
-        },
-        {
-          "id": "webview_custom_chrome_v114",
-          "conditions": {
-            "custom_function": "uses_chrome_v114"
-          },
-          "action": {
-            "version": "114.0.5735.130",
-            "variant": "573513033_arm64-v8a_armeabi-v7a_nodpi_10plus"
-          }
-        },
-        {
-          "id": "webview_default",
-          "conditions": {
-            "default": true
-          },
-          "action": {
-            "version": "137.0.7151.115",
-            "variant": "715111533"
-          }
-        }
-      ]
-    },
-  "trichrome": {
-      "rules": [
-        {
-          "id": "trichrome_lt_7",
-          "conditions": {
-            "os_version": {
-              "lt": 7
-            }
-          },
-          "action": {
-            "version": "103.0.5060.53",
-            "variant": "506005333_arm64-v8a_arm-v7a_nodpi_10plus"
-          }
-        },
-        {
-          "id": "trichrome_model_SM_A115M_os_10",
-          "conditions": {
-            "device_model": {
-              "in": ["SM-A115M"]
-            },
-            "os_version": {
-              "eq": 10
-            }
-          },
-          "action": {
-            "version": "108.0.5359.128",
-            "variant": "535912833_arm64-v8a_armeabi-v7a_nodpi_10plus"
-          }
-        },
-        {
-          "id": "trichrome_model_SM_A105M_os_11",
-          "conditions": {
-            "device_model": {
-              "in": ["SM-A105M"]
-            },
-            "os_version": {
-              "eq": 11
-            }
-          },
-          "action": {
-            "version": "127.0.6533.64",
-            "variant": "653306430_armeabi-v7a_nodpi_10plus"
-          }
-        },
-        {
-          "id": "trichrome_specific_device_model_S22",
-          "conditions": {
-            "device_model": {
-              "in": ["SM-S901B", "SM-S901E"]
-            },
-            "os_version": {
-              "eq": 14
-            }
-          },
-          "action": {
-            "version": "135.0.7049.113",
-            "variant": "704911333"
-          }
-        },
-        {
-        "id": "trichrome_specific_device_model_S21",
+      },
+      {
+        "id": "custom_chrome_v114_rule",
         "conditions": {
-          "device_model": {
-            "in": ["SM-G991B"]
-          },
-          "os_version": {
-            "eq": 15
-          }
+          "custom_function": "uses_chrome_v114"
         },
         "action": {
-          "version": "135.0.7049.113",
-          "variant": "704911333"
+          "version": "114.0.5735.130",
+          "variant": "573513033_arm64-v8a_armeabi-v7a_nodpi_10plus"
         }
+      },
+      {
+        "id": "default_rule",
+        "conditions": {
+          "default": true
         },
-        {
-          "id": "trichrome_lt_8",
-          "conditions": {
-            "os_version": {
-              "gte": 7,
-              "lt": 8
-            }
-          },
-          "action": {
-            "version": "117.0.5938.61",
-            "variant": "593806133_arm64-v8a_armeabi-v7a_nodpi_10plus"
-          }
-        },
-        {
-          "id": "trichrome_custom_chrome_v114",
-          "conditions": {
-            "custom_function": "uses_chrome_v114"
-          },
-          "action": {
-            "version": "114.0.5735.130",
-            "variant": "573513033_arm64-v8a_armeabi-v7a_nodpi_10plus"
-          }
-        },
-        {
-          "id": "trichrome_default",
-          "conditions": {
-            "default": true
-          },
-          "action": {
-            "version": "137.0.7151.115",
-            "variant": "715111533"
-          }
+        "action": {
+          "version": "137.0.7151.115",
+          "variant": "715111533"
         }
-      ]
-    },
-  "chromedriver": {
-      "rules": [
-        {
-          "id": "os_version_lt_5",
-          "conditions": {
-            "os_version": {
-              "lt": 5
-            }
-          },
-          "action": {
-            "path": "v80.0.3987.106/chromedriver"
-          }
-        },
-        {
-          "id": "chrome_lt_96",
-          "conditions": {
-            "chrome_version": {
-              "lt": 96
-            }
-          },
-          "action": {
-            "path": "v95.0.4638.69/chromedriver"
-          }
-        },
-        {
-          "id": "chrome_lt_99",
-          "conditions": {
-            "chrome_version": {
-              "gte": 96,
-              "lt": 99
-            }
-          },
-          "action": {
-            "path": "v96.0.4664.45/chromedriver"
-          }
-        },
-        {
-          "id": "chrome_lt_100",
-          "conditions": {
-            "chrome_version": {
-              "gte": 99,
-              "lt": 100
-            }
-          },
-          "action": {
-            "path": "v99.0.4844.51/chromedriver"
-          }
-        },
-        {
-          "id": "chrome_lt_101",
-          "conditions": {
-            "chrome_version": {
-              "gte": 100,
-              "lt": 101
-            }
-          },
-          "action": {
-            "path": "v100.0.4896.60/chromedriver"
-          }
-        },
-        {
-          "id": "chrome_lt_102",
-          "conditions": {
-            "chrome_version": {
-              "gte": 101,
-              "lt": 102
-            }
-          },
-          "action": {
-            "path": "v101.0.4951.41/chromedriver"
-          }
-        },
-        {
-          "id": "chrome_lt_104",
-          "conditions": {
-            "chrome_version": {
-              "gte": 102,
-              "lt": 104
-            }
-          },
-          "action": {
-            "path": "v103.0.5060.134/chromedriver"
-          }
-        },
-        {
-          "id": "chrome_lt_105",
-          "conditions": {
-            "chrome_version": {
-              "gte": 104,
-              "lt": 105
-            }
-          },
-          "action": {
-            "path": "v104.0.5112.79/chromedriver"
-          }
-        },
-        {
-          "id": "chrome_lt_106",
-          "conditions": {
-            "chrome_version": {
-              "gte": 105,
-              "lt": 106
-            }
-          },
-          "action": {
-            "path": "v105.0.5195.52/chromedriver"
-          }
-        },
-        {
-          "id": "chrome_lt_111",
-          "conditions": {
-            "chrome_version": {
-              "gte": 106,
-              "lt": 111
-            }
-          },
-          "action": {
-            "path": "v108.0.5359.71/chromedriver"
-          }
-        },
-        {
-          "id": "chrome_lt_113",
-          "conditions": {
-            "chrome_version": {
-              "gte": 111,
-              "lt": 113
-            }
-          },
-          "action": {
-            "path": "v111.0.5563.64/chromedriver"
-          }
-        },
-        {
-          "id": "chrome_lt_114",
-          "conditions": {
-            "chrome_version": {
-              "gte": 113,
-              "lt": 114
-            }
-          },
-          "action": {
-            "path": "v113.0.5672.63/chromedriver"
-          }
-        },
-        {
-          "id": "chrome_lt_117",
-          "conditions": {
-            "chrome_version": {
-              "gte": 114,
-              "lt": 117
-            }
-          },
-          "action": {
-            "path": "v114.0.5735.90/chromedriver"
-          }
-        },
-        {
-          "id": "chrome_lt_120",
-          "conditions": {
-            "chrome_version": {
-              "gte": 117,
-              "lt": 120
-            }
-          },
-          "action": {
-            "path": "v117.0.5938.92/chromedriver"
-          }
-        },
-        {
-          "id": "chrome_lt_123",
-          "conditions": {
-            "chrome_version": {
-              "gte": 120,
-              "lt": 123
-            }
-          },
-          "action": {
-            "path": "v120.0.6099.109/chromedriver"
-          }
-        },
-        {
-          "id": "chrome_lt_124",
-          "conditions": {
-            "chrome_version": {
-              "gte": 123,
-              "lt": 124
-            }
-          },
-          "action": {
-            "path": "v123.0.6312.86/chromedriver"
-          }
-        },
-        {
-          "id": "chrome_device_model_BON_AL00",
-          "conditions": {
-            "device_model": {
-              "in": ["BON-AL00"]
-            },
-            "chrome_version":{
-              "gte": 124
-            }
-          },
-          "action": {
-            "path": "v99.0.4844.51/chromedriver"
-          }
-        },
-        {
-          "id": "chrome_lt_135",
-          "conditions": {
-            "chrome_version": {
-              "lte": 135
-            }
-          },
-          "action": {
-            "path": "v135.0.7049.114/chromedriver"
-          }
-        },
-        {
-          "default_rule": true,
-          "conditions": {
-            "default": true
-          },
-          "action": {
-            "path": "v137.0.7151.119/chromedriver"
-          }
-        }
-      ]
-    }
+      }
+    ]
+  }
 }
