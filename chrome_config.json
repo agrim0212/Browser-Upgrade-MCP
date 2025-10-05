@@ -2,16 +2,6 @@
   "chrome": {
     "rules": [
       {
-        "id": "chrome_140_upgrade",
-        "conditions": {
-          "default": true
-        },
-        "action": {
-          "version": "140.0.123",
-          "variant": "abc"
-        }
-      },
-      {
         "id": "chrome_141_upgrade",
         "conditions": {
           "default": true
@@ -26,16 +16,6 @@
   "webview": {
     "rules": [
       {
-        "id": "webview_140_upgrade",
-        "conditions": {
-          "default": true
-        },
-        "action": {
-          "version": "140.0.234",
-          "variant": "bcd"
-        }
-      },
-      {
         "id": "webview_141_upgrade",
         "conditions": {
           "default": true
@@ -49,16 +29,6 @@
   },
   "trichrome": {
     "rules": [
-      {
-        "id": "trichrome_140_upgrade",
-        "conditions": {
-          "default": true
-        },
-        "action": {
-          "version": "140.0.345",
-          "variant": "cde"
-        }
-      },
       {
         "id": "trichrome_141_upgrade",
         "conditions": {
