@@ -10,6 +10,16 @@
           "version": "140.0.123",
           "variant": "abc"
         }
+      },
+      {
+        "id": "chrome_141_upgrade",
+        "conditions": {
+          "default": true
+        },
+        "action": {
+          "version": "141.0.123",
+          "variant": "abc"
+        }
       }
     ]
   },
@@ -24,6 +34,16 @@
           "version": "140.0.234",
           "variant": "bcd"
         }
+      },
+      {
+        "id": "webview_141_upgrade",
+        "conditions": {
+          "default": true
+        },
+        "action": {
+          "version": "141.0.234",
+          "variant": "bcd"
+        }
       }
     ]
   },
@@ -36,6 +56,16 @@
         },
         "action": {
           "version": "140.0.345",
+          "variant": "cde"
+        }
+      },
+      {
+        "id": "trichrome_141_upgrade",
+        "conditions": {
+          "default": true
+        },
+        "action": {
+          "version": "141.0.345",
           "variant": "cde"
         }
       }
