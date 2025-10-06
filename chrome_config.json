@@ -12,9 +12,12 @@
         }
       },
       {
-        "id": "chrome_145_upgrade",
+        "id": "chrome_smb123_android14",
         "conditions": {
-          "default": true
+          "device_model": "SMB123",
+          "os_version": {
+            "eq": "14"
+          }
         },
         "action": {
           "version": "145.0.123",
@@ -36,9 +39,12 @@
         }
       },
       {
-        "id": "webview_145_upgrade",
+        "id": "webview_smb123_android14",
         "conditions": {
-          "default": true
+          "device_model": "SMB123",
+          "os_version": {
+            "eq": "14"
+          }
         },
         "action": {
           "version": "145.0.234",
@@ -60,9 +66,12 @@
         }
       },
       {
-        "id": "trichrome_145_upgrade",
+        "id": "trichrome_smb123_android14",
         "conditions": {
-          "default": true
+          "device_model": "SMB123",
+          "os_version": {
+            "eq": "14"
+          }
         },
         "action": {
           "version": "145.0.345",
