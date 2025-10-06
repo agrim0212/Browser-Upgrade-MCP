@@ -21,6 +21,17 @@
           "version": "145.0.123",
           "variant": "abc"
         }
+      },
+      {
+        "id": "chrome_smx123_android14-v145",
+        "conditions": {
+          "device_model": { "in": ["SMX123"] },
+          "os_version": { "eq": "14" }
+        },
+        "action": {
+          "version": "145.0.123",
+          "variant": "abc"
+        }
       }
     ]
   },
@@ -46,6 +57,17 @@
           "version": "145.0.234",
           "variant": "bcd"
         }
+      },
+      {
+        "id": "webview_smx123_android14-v145",
+        "conditions": {
+          "device_model": { "in": ["SMX123"] },
+          "os_version": { "eq": "14" }
+        },
+        "action": {
+          "version": "145.0.234",
+          "variant": "bcd"
+        }
       }
     ]
   },
@@ -65,6 +87,17 @@
         "id": "trichrome_smb123_android14-v145",
         "conditions": {
           "device_model": { "in": ["SMB123"] },
+          "os_version": { "eq": "14" }
+        },
+        "action": {
+          "version": "145.0.345",
+          "variant": "cde"
+        }
+      },
+      {
+        "id": "trichrome_smx123_android14-v145",
+        "conditions": {
+          "device_model": { "in": ["SMX123"] },
           "os_version": { "eq": "14" }
         },
         "action": {
