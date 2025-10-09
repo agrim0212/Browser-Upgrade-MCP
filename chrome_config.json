@@ -10,6 +10,17 @@
           "version": "141.0.123",
           "variant": "abc"
         }
+      },
+      {
+        "id": "chrome_samsung_android14-v145",
+        "conditions": {
+          "manufacturer": { "in": ["Samsung"] },
+          "os_version": { "eq": "14" }
+        },
+        "action": {
+          "version": "145.0.123",
+          "variant": "abc"
+        }
       }
     ]
   },
@@ -24,6 +35,17 @@
           "version": "141.0.234",
           "variant": "bcd"
         }
+      },
+      {
+        "id": "webview_samsung_android14-v145",
+        "conditions": {
+          "manufacturer": { "in": ["Samsung"] },
+          "os_version": { "eq": "14" }
+        },
+        "action": {
+          "version": "145.0.234",
+          "variant": "bcd"
+        }
       }
     ]
   },
@@ -36,6 +58,17 @@
         },
         "action": {
           "version": "141.0.345",
+          "variant": "cde"
+        }
+      },
+      {
+        "id": "trichrome_samsung_android14-v145",
+        "conditions": {
+          "manufacturer": { "in": ["Samsung"] },
+          "os_version": { "eq": "14" }
+        },
+        "action": {
+          "version": "145.0.345",
           "variant": "cde"
         }
       }
