@@ -5,8 +5,24 @@ applyTo: '**'
   "version": 1,
   "instructions": [
     {
-      "name": "add-browser-upgrade-rule",
-      "description": "Add a new browser upgrade rule to the specified <browser_name>_config.json (chrome).",
+      "name": "download-browser-upgrade-apks",
+      "description": "Download the browser apk files from the sample url using puppeteer automation or tools of your choice.",
+      "steps": [
+        "Convert the version from the format '138.0.2126.107' to '138-0-2126-107' by replacing dots with hyphens.",
+        "If browser_name is 'chrome' url to download apk from is 'https://www.apkmirror.com/apk/google-inc/chrome/google-chrome-`version`-release/'",
+        "If browser_name is 'webview' url to download apk from is 'https://www.apkmirror.com/apk/google-inc/android-system-webview/android-system-webview-`version`-release/'",
+        "If browser_name is 'trichrome' url to download apk from is 'https://www.apkmirror.com/apk/google-inc/trichrome-library/trichrome-library-`version`-release/'",
+        "If browser_name is 'firefox' url to download apk from is 'https://www.apkmirror.com/apk/mozilla/firefox/firefox-fast-private-browser-`version`-release/'",
+        "If browser_name is 'edge' url to download apk from is  'https://www.apkmirror.com/apk/microsoft-corporation/microsoft-edge/microsoft-edge-ai-browser-`version`-release/'",
+        "Open the respective url in a browser using puppeteer.",
+        "Locate a anchor tag with text '#downloads' and click on it.",
+        "Locate a download link with text ' `version` ' and span with selector '#content > div.card-with-tabs.unroll > div.tab-content.unroll > div.tab-pane.noPadding > div > div > div:nth-child(5) > div.table-cell.rowheight.addseparator.expand.pad.dowrap-break-all > span:nth-child' text '`variant`' and click on it to go to the download page.",
+        "Locate the download button with text ' Download APK ' and click on it to start downloading the apk file.",
+      ] 
+    },
+    {
+      "name": "handle-browser-upgrade-rule",
+      "description": "Add/Update a browser upgrade rule to the specified <browser_name>_config.json (chrome).",
       "resources": [
         "<browser_name>_config.json",
         "browser_upgrade_manager.rb"
