@@ -2,13 +2,13 @@
   "chrome": {
     "rules": [
       {
-        "id": "chrome_141_upgrade",
+        "id": "chrome_142_upgrade",
         "conditions": {
           "default": true
         },
         "action": {
-          "version": "141.0.123",
-          "variant": "abc"
+          "version": "142.0.7444.158",
+          "variant": "744415833"
         }
       }
     ]
