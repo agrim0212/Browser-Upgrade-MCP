@@ -1,0 +1,16 @@
+{
+    "firefox": {
+        "rules": [
+        {
+            "id": "default_rule",
+            "conditions": {
+                "default": true
+            },
+            "action": {
+                "version": "139.0.4",
+                "variant": "universal"
+            }
+        }
+        ]
+    }
+}
