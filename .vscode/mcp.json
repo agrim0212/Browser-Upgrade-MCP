@@ -3,6 +3,34 @@
     "github": {
       "type": "http",
       "url": "https://api.githubcopilot.com/mcp/"
+    },
+    "puppeteer": {
+      "command": "/Users/agrim@browserstack.com/.nvm/versions/node/v24.11.1/bin/npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"],
+      "env": {
+        "PATH": "/Users/agrim@browserstack.com/.nvm/versions/node/v20.19.5/bin:/Users/agrim@browserstack.com/.pyenv/bin:/Users/agrim@browserstack.com/.rbenv/shims:/Users/agrim@browserstack.com/.rbenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/iTerm.app/Contents/Resources/utilities:/Users/agrim@browserstack.com/.local/bin:/Users/agrimsaxena/.local/bin:/Users/agrim@browserstack.com/.local/bin"
+      }
+    },
+    "sequential-thinking": {
+      "command": "/Users/agrim@browserstack.com/.nvm/versions/node/v24.11.1/bin/npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "env": {
+        "PATH": "/Users/agrim@browserstack.com/.nvm/versions/node/v20.19.5/bin:/Users/agrim@browserstack.com/.pyenv/bin:/Users/agrim@browserstack.com/.rbenv/shims:/Users/agrim@browserstack.com/.rbenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/iTerm.app/Contents/Resources/utilities:/Users/agrim@browserstack.com/.local/bin:/Users/agrimsaxena/.local/bin:/Users/agrim@browserstack.com/.local/bin"
+      }
+    },
+    "android-packages": {
+      "command": "/Users/agrim@browserstack.com/.local/bin/uv",
+      "args": [
+        "run",
+        "--python", "3.11",
+        "--with", "mcp",
+        "--with", "boto3",
+        "--with", "requests",
+        "/Users/agrim@browserstack.com/Documents/PackageUploaderMCPServer/server.py"
+      ]
     }
   }
 }
