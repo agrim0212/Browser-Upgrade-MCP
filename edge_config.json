@@ -1,0 +1,15 @@
+{
+  "rules": [
+    {
+      "id": "edge_default_arm-v139",
+      "conditions": {
+        "default": true
+      },
+      "action": {
+        "version": "139.0.114",
+        "variant": "abc",
+        "architecture": "arm"
+      }
+    }
+  ]
+}
